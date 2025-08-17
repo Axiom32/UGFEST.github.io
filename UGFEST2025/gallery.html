@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery — Uga Fest Japan</title>
+  <link rel="icon" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/styles.min.css">
+	<style>
+  /* Bigger gallery tiles */
+  .gallery{
+    /* Each tile is at least 320px wide, then auto-fills rows */
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px; /* a little more breathing room */
+  }
+  /* Optional: slightly bigger padding on each tile card */
+  .gallery .tile{ padding:12px !important; }
+
+  /* Keep squares; change to 4/3 if you want taller pics */
+  .gallery img{ aspect-ratio: 1 / 1; object-fit: cover; }
+  /* If you prefer taller cards, use: aspect-ratio: 4 / 3; */
+  
+  /* Tweak for smaller screens so it still looks great */
+  @media (max-width:1024px){ .gallery{ grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); } }
+  @media (max-width:680px){ .gallery{ grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); } }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="brand" aria-label="Uga Fest Japan Home">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <div>Uga Fest Japan</div>
+          <div class="muted" style="font-size:.85rem">Sports &amp; Music Festival</div>
+        </div>
+      </a>
+      <nav aria-label="Primary">
+        <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="program.html">Program</a></li>
+          <li><a href="gallery.html" aria-current="page" class="active">Gallery</a></li>
+          <li><a href="tickets.html">Tickets</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn" href="tickets.html" aria-label="Buy Tickets">Buy Tickets</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <span class="tag">Gallery</span>
+      <h1 class="h1">Moments from previous editions</h1>
+      <p class="muted">Click any photo to view full size in a new tab. (Photos by the community.)</p>
+      <div class="gallery" style="margin-top:16px">
+<a href="assets/photos/tiny/tiny/01_rainy_match.webp" target="_blank" rel="noopener">
+  <figure class="tile" style="padding:10px">
+    <img loading="lazy" decoding="async" loading="lazy" src="assets/photos/tiny/tiny/01_rainy_match.webp" alt="Players gather under umbrellas during a rainy football match">
+    <figcaption class="muted" style="margin-top:8px">Players gather under umbrellas during a rainy football match</figcaption>
+  </figure>
+</a>
+<a href="assets/photos/tiny/tiny/02_live_performance.webp" target="_blank" rel="noopener">
+  <figure class="tile" style="padding:10px">
+    <img loading="lazy" decoding="async" loading="lazy" src="assets/photos/tiny/tiny/02_live_performance.webp" alt="Live performance with a joyful crowd at Uga Fest">
+    <figcaption class="muted" style="margin-top:8px">Live performance with a joyful crowd at Uga Fest</figcaption>
+  </figure>
+</a>
+<a href="assets/photos/tiny/tiny/03_ugandan_food.webp" target="_blank" rel="noopener">
+  <figure class="tile" style="padding:10px">
+    <img loading="lazy" decoding="async" loading="lazy" src="assets/photos/tiny/tiny/03_ugandan_food.webp" alt="Buffet of Ugandan dishes at the festival">
+    <figcaption class="muted" style="margin-top:8px">Buffet of Ugandan dishes at the festival</figcaption>
+  </figure>
+</a>
+<a href="assets/photos/tiny/tiny/04_uganda_flag.webp" target="_blank" rel="noopener">
+  <figure class="tile" style="padding:10px">
+    <img loading="lazy" decoding="async" loading="lazy" src="assets/photos/tiny/tiny/04_uganda_flag.webp" alt="Uganda flag displayed at the sports grounds">
+    <figcaption class="muted" style="margin-top:8px">Uganda flag displayed at the sports grounds</figcaption>
+  </figure>
+</a>
+<a href="assets/photos/tiny/tiny/05_team_warmup.webp" target="_blank" rel="noopener">
+  <figure class="tile" style="padding:10px">
+    <img loading="lazy" decoding="async" loading="lazy" src="assets/photos/tiny/tiny/05_team_warmup.webp" alt="Team warm-up jog on the field">
+    <figcaption class="muted" style="margin-top:8px">Team warm-up jog on the field</figcaption>
+  </figure>
+</a>
+<a href="assets/photos/tiny/tiny/06_cindy_poster.webp" target="_blank" rel="noopener">
+  <figure class="tile" style="padding:10px">
+    <img loading="lazy" decoding="async" loading="lazy" src="assets/photos/tiny/tiny/06_cindy_poster.webp" alt="Official poster: Cindy Sanyu — The Loyal Experience">
+    <figcaption class="muted" style="margin-top:8px">Official poster: Cindy Sanyu — The Loyal Experience</figcaption>
+  </figure>
+</a>
+<a href="assets/photos/tiny/tiny/07_crowd1.webp" target="_blank" rel="noopener">
+  <figure class="tile" style="padding:10px">
+    <img loading="lazy" decoding="async" loading="lazy" src="assets/photos/tiny/tiny/07_crowd1.webp" alt="Friends of Uganda connecting at the after-party">
+    <figcaption class="muted" style="margin-top:8px">Friends of Uganda connecting at the after-party</figcaption>
+  </figure>
+</a>
+<a href="assets/photos/tiny/tiny/08_crowd2.webp" target="_blank" rel="noopener">
+  <figure class="tile" style="padding:10px">
+    <img loading="lazy" decoding="async" loading="lazy" src="assets/photos/tiny/tiny/08_crowd2.webp" alt="Crowd enjoying the vibes indoors">
+    <figcaption class="muted" style="margin-top:8px">Crowd enjoying the vibes indoors</figcaption>
+  </figure>
+</a>
+<a href="assets/photos/tiny/tiny/09_ugafest_poster.webp" target="_blank" rel="noopener">
+  <figure class="tile" style="padding:10px">
+    <img loading="lazy" decoding="async" loading="lazy" src="assets/photos/tiny/tiny/09_ugafest_poster.webp" alt="Uga Fest Nagoya poster — 12 Oct 2025">
+    <figcaption class="muted" style="margin-top:8px">Uga Fest Nagoya poster — 12 Oct 2025</figcaption>
+  </figure>
+</a>
+<a href="assets/photos/tiny/tiny/10_indoor_scene.webp" target="_blank" rel="noopener">
+  <figure class="tile" style="padding:10px">
+    <img loading="lazy" decoding="async" loading="lazy" src="assets/photos/tiny/tiny/10_indoor_scene.webp" alt="Community gathering indoors with decorations">
+    <figcaption class="muted" style="margin-top:8px">Community gathering indoors with decorations</figcaption>
+  </figure>
+</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="section-sm">
+    <div class="container foot-grid">
+      <div>
+        <div class="brand">
+          <div class="logo" aria-hidden="true"></div>
+          <div>
+            <div>Uga Fest Japan</div>
+            <div class="muted" style="font-size:.85rem">Celebrating Uganda’s Independence</div>
+          </div>
+        </div>
+        <p class="muted" style="margin-top:10px">© <span id="year"></span> Uga Fest Japan. All rights reserved.</p>
+      </div>
+      <div class="foot-col">
+        <div class="h3">Explore</div>
+        <a href="program.html">Program</a>
+        <a href="tickets.html">Tickets</a>
+        <a href="partners.html">Partners</a>
+      </div>
+      <div class="foot-col">
+        <div class="h3">Help</div>
+        <a href="faqs.html">FAQs</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+</footer>
+  <button id="backToTop" aria-label="Back to top" title="Back to top"
+    style="position:fixed;right:16px;bottom:16px;display:none;border:1px solid var(--line);background:#141424;color:var(--text);padding:.7rem .9rem;border-radius:999px;box-shadow:var(--shadow)">↑</button>
+  <script src="assets/main.min.js"></script>
+</body>
+</html>
