@@ -148,3 +148,76 @@ html[data-theme="light"] .menu-btn{background:#ffffff;border-color:var(--line);c
 
 /* Back-to-top overrides for light */
 html[data-theme="light"] #backToTop{background:#ffffff!important;color:#0f1117!important;border-color:var(--line)!important}
+
+
+/* === MOBILE UPGRADE PACK (site-wide) === */
+
+/* Tablet polish */
+@media (max-width:1024px){
+  .section{padding:48px 0}
+  .hero-wrap{grid-template-columns:1fr; gap:18px; padding:36px 0}
+  .tiles{grid-template-columns:repeat(2,1fr)}
+  .grid.cards{grid-template-columns:repeat(2,1fr)}
+  .contact-grid{grid-template-columns:1fr 1fr}
+  .gallery{gap:18px; grid-template-columns:repeat(auto-fill, minmax(240px,1fr))}
+}
+
+/* Phone-first */
+@media (max-width:680px){
+  /* Header & nav */
+  header .nav{padding:10px 0}
+  .menu-btn{display:inline-flex; padding:10px 12px; border-radius:12px}
+  nav ul{
+    display:none; position:absolute; left:0; right:0; top:56px;
+    background:var(--panel); border-bottom:1px solid var(--line);
+    padding:8px 10px; gap:6px; flex-direction:column;
+    max-height:calc(100vh - 56px); overflow:auto;
+  }
+  nav ul.open{display:flex}
+  nav a{padding:14px 12px; border-radius:12px}
+
+  /* Layout stacks */
+  .section{padding:40px 0}
+  .tiles,.two,.pricing,.contact-grid,.foot-grid,.grid.cards{grid-template-columns:1fr}
+  .gallery{gap:12px; grid-template-columns:repeat(2,1fr)}
+
+  /* Hero */
+  .hero-wrap{gap:14px; padding:30px 0}
+  .hero .art{aspect-ratio:16/9; padding:10px}
+  .meta .pill{font-size:.85rem}
+
+  /* Countdown */
+  .countdown{gap:8px}
+  .timebox{min-width:64px; padding:8px}
+
+  /* Forms & buttons */
+  .actions .btn, form .btn{width:100%}
+  input, select, textarea{font-size:16px} /* iOS zoom fix */
+
+  /* Media */
+  .gallery img{aspect-ratio:1/1; object-fit:cover}
+  iframe{max-width:100%; display:block}
+
+  /* Sticky items & safe areas */
+  .sticky-cta{padding:10px; padding-bottom:calc(10px + env(safe-area-inset-bottom))}
+  #backToTop{bottom:calc(16px + env(safe-area-inset-bottom))}
+}
+
+/* Optional: denser gallery on very small phones */
+/*
+@media (max-width:380px){
+  .gallery{grid-template-columns:1fr}
+}
+*/
+/* Smaller Buy Tickets button in the header only */
+header .nav-cta .btn{
+  padding:.55rem .8rem;       /* was ~.9rem 1.1rem */
+  font-size:.9rem;            /* slightly smaller text */
+  border-radius:10px;         /* a bit tighter */
+  font-weight:700;            /* less bold so it feels smaller */
+  box-shadow:0 6px 18px rgba(0,0,0,.20); /* lighter shadow so it looks lighter */
+}
+/* Make it even tighter on phones */
+@media (max-width:680px){
+  header .nav-cta .btn{ padding:.5rem .7rem; font-size:.9rem }
+}
